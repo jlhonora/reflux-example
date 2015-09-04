@@ -6,21 +6,18 @@ var ImageActions = require('../actions/imageactions');
 
 var Home = React.createClass({
 
-    render: function() {
-        return (
-            <div className="container">
-                <Well>
-                    <Button bsStyle='primary' onClick={ImageActions.fetchList}>Fetch new images please</Button>
-                    <Well>
-                    <a href="https://github.com/ochronus/reflux-example">Source @ GitHub</a>
-                    </Well>
-                </Well>
-                <Well>
-                    <ImageGrid></ImageGrid>
-                </Well>
-            </div>
-        );
-    }
+  render: function() {
+    return (
+      <div className="container">
+        <Well>
+          <Button bsStyle='primary' onClick={ImageActions.fetchList}>Refresh</Button>
+          </Well>
+        <Well>
+          <ImageGrid></ImageGrid>
+        </Well>
+      </div>
+    );
+  }
 });
 
 module.exports = Home;

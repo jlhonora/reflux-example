@@ -1,8 +1,8 @@
 {
-  "name": "reflux-gists-example",
-  "version": "0.1.0",
+  "name": "flickr",
+  "version": "0.0.1",
   "authors": [
-    "Csaba Okrona"
+    "Jose Honorato"
   ],
   "moduleType": [
     "node"
