@@ -9,12 +9,12 @@ var ImageGrid = React.createClass({
 
   render: function() {
     if (!this.state.imagestore) {
-      return (<Row></Row>);
+      return (<Row/>);
     }
     return (
       <Row>
         {this.state.imagestore.map(function (image) {
-          return <Image image={image}></Image>
+          return <Image image={image} />
         })}
       </Row>
     );
